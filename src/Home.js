@@ -1,9 +1,9 @@
-import { useEffect,useState } from "react";
+import React,{ useEffect,useState } from "react";
 const Home=()=>{
     const clock=()=>{
         return new Date().toLocaleTimeString();
     }
-    const [currTime,setTime]=useEffect(clock());
+    const [currTime,setTime]=useState(clock());
     useEffect(()=>{
         const Timer=setInterval(()=>{
             setTime(new Date().toLocaleTimeString());
