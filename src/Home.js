@@ -12,7 +12,7 @@ const Home=()=>{
         }
     },[]);
     return(
-        <div>
+        <div className="text-center min-h-screen bg-[#12152E] text-white">
             <p>{currTime}</p>
         </div>
     )
