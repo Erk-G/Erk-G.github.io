@@ -74,3 +74,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 react-gh-pages doesn't seem to be deploying this correctly. Starts fine as a react app.
 
 Changed BrowserRouter to HashRouter and nothing changed. Turns out my homepage in package.json was not at all correct. Website now loading
+
+Adding in my reviews section, right now just doing some testing to see how to go about implementing it.
+useEffect is going off more than once on refresh so need to figure that out. Tried using the iterator in the for loop to switch between txts but it didn't seem to work, that will be fixed first.
