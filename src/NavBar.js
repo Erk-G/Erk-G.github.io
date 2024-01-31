@@ -8,6 +8,7 @@ const NavBar=()=>{
     return(
         <div className="grid grid-cols-4 gap-2 py-10" style={{backgroundColor:"#203647"}}>
             <button className={btnClass} onClick={()=>navTo("")}>Home</button>
+            <button className={btnClass} onClick={()=>navTo("review")}>Reviews</button>
         </div>
     )
 }
