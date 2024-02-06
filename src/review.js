@@ -5,25 +5,28 @@ import { useState,useEffect } from "react";
 //Current plan, load all txts to "reviews". Have an array of buttons which will change "currentReview" to the buttons chosen review
 const Review=()=>{
     const [Reviews,setReviews]=useState([""]);
-    const [reviewButton,setReviewButtons]=useState([]);
     const [currentReview,setCurrentReview]=useState([""]);
+    const btnClass="bg-gray-700 hover:bg-gray-650 text-white font-bold py-1 px-2 rounded"
     useEffect(()=>{
         let allReviews=[];
-        let reviewButtons=[];
         for(let i=1;i<3;i++){
             fetch(`/Reviews/test${i}.txt`).then(res=>res.text()).then(text=>{
                 allReviews.push(text);
                 setReviews(allReviews);
-                reviewButtons.push(<button onClick={()=>setCurrentReview(Reviews[0])}>file {i}</button>);
-                setReviewButtons(reviewButtons);;
             });
         }
     },[]);
-    console.log(reviewButton);
+    
+    const createButton=(text,idx)=>{
+        return(
+            <button id={idx} onClick={()=>setCurrentReview(text)} className={btnClass}>file {idx+1}</button>
+        )
+    }
+    console.log(Reviews);
     return(
         <div className="text-center min-h-screen bg-[#12152E] text-white">
             <div>
-                {reviewButton}
+                {Reviews.map((text,idx)=>createButton(text,idx))}
             </div>
             <div>
                 {currentReview}
