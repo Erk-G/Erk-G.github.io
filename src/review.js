@@ -6,7 +6,7 @@ import { useState,useEffect } from "react";
 const Review=()=>{
     const [Reviews,setReviews]=useState([""]);
     const [currentReview,setCurrentReview]=useState([""]);
-    const btnClass="bg-gray-700 hover:bg-gray-650 text-white font-bold py-1 px-2 rounded"
+    const btnClass="bg-gray-700 hover:bg-gray-600 text-white font-bold h-min w-full rounded"
     useEffect(()=>{
         let allReviews=[];
         for(let i=1;i<3;i++){
@@ -24,11 +24,11 @@ const Review=()=>{
     }
     console.log(Reviews);
     return(
-        <div className="text-center min-h-screen bg-[#12152E] text-white">
-            <div>
+        <div className="flex min-h-screen bg-[#12152E] text-white">
+            <div className="w-1/5 text-center grid grid-cols-1 gap-y-0 bg-[#203647]">
                 {Reviews.map((text,idx)=>createButton(text,idx))}
             </div>
-            <div>
+            <div className="w-4/5">
                 {currentReview}
             </div>
         </div>
