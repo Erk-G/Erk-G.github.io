@@ -69,6 +69,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
+## To Do
+
+1. Create Pre-Algebra preactice question section ex. practicing adding and subtracting negative numbers.
+This will be a route with a sidebar much like reviews except the buttons will pull up different types of questions (negatuve numbers, conversions etc.) and the functions will be pulled from a seperate js file.
+
+2. Add in all my review txts. They are not organized in a way to easily load them but that's just a lot of manual work.
+
+3. Bug fixes, mainly why all the txts don't always load when going to reviews.
+
 ## OnGoing notes
 
 react-gh-pages doesn't seem to be deploying this correctly. Starts fine as a react app.
