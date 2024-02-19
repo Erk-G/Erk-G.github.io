@@ -3,7 +3,7 @@
 const mathGen=(choice)=>{
     //Adding negative numbers
     let res=[];
-    if(choice==1){
+    if(choice==="Negative Addition"){
         const first_num= Math.floor(Math.random()*30+1)*-1;
         const second_num=Math.floor(Math.random()*30+1);
         const random=Math.floor(Math.random()*10+1);

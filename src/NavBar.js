@@ -9,6 +9,7 @@ const NavBar=()=>{
         <div className="grid grid-cols-4 gap-2 bg-[#203647]">
             <button className={btnClass} onClick={()=>navTo("/")}>Home</button>
             <button className={btnClass} onClick={()=>navTo("/reviews")}>Reviews</button>
+            <button className={btnClass} onClick={()=>navTo("/math")}>Reviews</button>
         </div>
     )
 }
