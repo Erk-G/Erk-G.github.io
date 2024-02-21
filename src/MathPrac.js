@@ -4,7 +4,7 @@ import { useState } from "react";
 const MathPrac=()=>{
     const [mathProblem,setMathProblem]=useState(["",0]);
     const subjects=["Negative Addition"];
-    const btnClass="bg-gray-700 hover:bg-gray-600 text-white font-bold h-min w-full py-2 rounded"
+    const btnClass="bg-gray-700 hover:bg-gray-600 text-white font-bold h-min w-full py-2 rounded";
     const createButton=(subject,idx)=>{
         const newMathProblem=mathGen(subject);
         console.log(newMathProblem);
@@ -33,9 +33,9 @@ const MathPrac=()=>{
                     <h1>Question: {mathProblem[0]}</h1>
                     
                     <p>Answer:</p>
-                    <input id="answer" name="answer"/>
+                    <input id="answer" name="answer" autoComplete="off" className="bg-grey-900 appearance-none border-2 border-gray-200 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"/>
 
-                <button>Submit</button>
+                <button className="bg-[#203647]">Submit</button>
                 </form>
             </div>
         </div>

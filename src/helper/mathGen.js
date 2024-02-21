@@ -8,7 +8,7 @@ const mathGen=(choice)=>{
         const second_num=Math.floor(Math.random()*30+1);
         const random=Math.floor(Math.random()*10+1);
         if(random<=5){
-            const question=`${second_num}+${first_num}`;
+            const question=`${second_num}+(${first_num})`;
             res.push(question);
             res.push(second_num+first_num);
         }
