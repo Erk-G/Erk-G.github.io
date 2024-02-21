@@ -12,6 +12,16 @@ const MathPrac=()=>{
         <button id={idx} onClick={()=>setMathProblem([newMathProblem[0],newMathProblem[1]])} className={btnClass}>{subject}</button>
         )
     }
+    const handleSubmit=(e)=>{
+        e.preventDefault();
+        if(e.target.answer.value===`${mathProblem[1]}`){
+            alert("Correct!");
+        }
+        else{
+            alert(`Incorrect. Answer is ${mathProblem[1]}`);
+        }
+
+    }
     console.log(mathProblem);
     return(
         <div className="flex min-h-screen bg-[#12152E] text-white">
@@ -19,7 +29,14 @@ const MathPrac=()=>{
                 {subjects.map((subject,idx)=>createButton(subject,idx))}
             </div>
             <div className="w-4/5">
-                <p>Question: {mathProblem[0]}</p>
+                <form onSubmit={handleSubmit}>
+                    <h1>Question: {mathProblem[0]}</h1>
+                    
+                    <p>Answer:</p>
+                    <input id="answer" name="answer"/>
+
+                <button>Submit</button>
+                </form>
             </div>
         </div>
     )
