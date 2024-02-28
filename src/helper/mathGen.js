@@ -22,11 +22,12 @@ const mathGen=(choice)=>{
         if(random<=5){
             const question=`What is (x+(${first_num}))*(x^2+${second_num}) when x=${random}`;
             res.push(question);
-            res.push((random+first_num)*(random+second_num));
+            res.push((random+first_num)*((random*random)+second_num));
         }
         else{
-            const question=`What is (x+${second_num})*(x+(${first_num})) when x=${random}`;
-            res.push((random+second_num)*(random+first_num));
+            const question=`What is (x+${second_num})*(x^2+(${first_num})) when x=${random}`;
+            res.push(question);
+            res.push((random+second_num)*((random*random)+first_num));
         }
     }
     // else if(choice=="Parallel or Intersecting lines"){
