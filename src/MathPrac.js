@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const MathPrac=()=>{
     const [mathProblem,setMathProblem]=useState(["",0]);
-    const subjects=["Negative Addition"];
+    const subjects=["Negative Addition","Many times Many"];
     const btnClass="bg-gray-700 hover:bg-gray-600 text-white font-bold h-min w-full py-2 rounded";
     const createButton=(subject,idx)=>{
         const newMathProblem=mathGen(subject);
@@ -28,7 +28,7 @@ const MathPrac=()=>{
             <div className="w-1/5 text-center flex flex-col gap-y-4 bg-[#203647]">
                 {subjects.map((subject,idx)=>createButton(subject,idx))}
             </div>
-            <div className="w-4/5">
+            <div className="w-4/5 text-center">
                 <form onSubmit={handleSubmit}>
                     <h1>Question: {mathProblem[0]}</h1>
                     
