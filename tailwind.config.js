@@ -1,13 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/Home.js",
-    "./src/NavBar.js",
-    "./src/review.js",
-    "./src/MathPrac.js"
+    "./src/*.js",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        orbitron:["Orbitron","sans-serif"],
+      },
+    },
   },
   plugins: [],
 }
