@@ -4,14 +4,16 @@ import { useState,useEffect } from "react";
 //In the spirit of my old website I will not do that
 //Current plan, load all txts to "reviews". Have an array of buttons which will change "currentReview" to the buttons chosen review
 const Review=()=>{
-    const [Reviews,setReviews]=useState([""]);
+    const [Reviews,setReviews]=useState([["",""]]);
     const [currentReview,setCurrentReview]=useState([""]);
     const btnClass="bg-gray-700 hover:bg-gray-600 text-white font-bold h-min w-full py-2 rounded"
     useEffect(()=>{
         let allReviews=[];
         for(let i=1;i<3;i++){
             fetch(`/Reviews/test${i}.txt`).then(res=>res.text()).then(text=>{
-                allReviews.push(text);
+
+                console.log(text.match(/\n.+?$/gm));
+                allReviews.push([text.match(/.+?(?=-)/),text.match(/\n.+?$/gm)]);
                 setReviews(allReviews);
             });
         }
@@ -19,7 +21,7 @@ const Review=()=>{
     
     const createButton=(text,idx)=>{
         return(
-            <button id={idx} onClick={()=>setCurrentReview(text)} className={btnClass}>file {idx+1}</button>
+            <button id={idx} onClick={()=>setCurrentReview(text[1])} className={btnClass}>{text[0]} </button>
         )
     }
     console.log(Reviews);

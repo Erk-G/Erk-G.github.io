@@ -24,13 +24,8 @@ const Home=()=>{
                     <h1 className="text-2xl">Currently Playing:</h1>
                     <div className="flex">
                         <div className="w-1/2">
-                            <h2>Final Fantasy 7 Rebirth</h2>
-                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/75/Boxart_for_Final_Fantasy_VII_Rebirth.png/220px-Boxart_for_Final_Fantasy_VII_Rebirth.png" alt="FF7 Rebirth Box Art from Wikipedia"/>
-                        </div>
-                        <div className="w-1/2">
-                            <h2>Unicorn Overlord</h2>
-                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a1/Unicorn_Overlord_cover.jpg/220px-Unicorn_Overlord_cover.jpg" alt="Unicorn Overlord Box Art from Wikipedia"/>
-                        
+                            <h2>Dragon's Dogma 2</h2>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c7/Dragon%27s_Dogma_2_cover_art.jpg/220px-Dragon%27s_Dogma_2_cover_art.jpg" alt="Dragons Dogma Box Art from Wikipedia"/>
                         </div>
                     </div>
                 </div>
