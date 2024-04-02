@@ -11,8 +11,6 @@ const Review=()=>{
         let allReviews=[];
         for(let i=1;i<3;i++){
             fetch(`/Reviews/test${i}.txt`).then(res=>res.text()).then(text=>{
-
-                console.log(text.match(/\n.+?$/gm));
                 allReviews.push([text.match(/.+?(?=-)/),text.match(/\n.+?$/gm)]);
                 setReviews(allReviews);
             });
