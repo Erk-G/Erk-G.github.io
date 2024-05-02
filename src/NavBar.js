@@ -10,6 +10,7 @@ const NavBar=()=>{
             <button className={btnClass} onClick={()=>navTo("/")}>Home</button>
             <button className={btnClass} onClick={()=>navTo("/reviews")}>Reviews</button>
             <button className={btnClass} onClick={()=>navTo("/math")}>Math Problems</button>
+            <button className={btnClass} onClick={()=>navTo("/games")}>Games</button>
         </div>
     )
 }
