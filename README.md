@@ -80,11 +80,4 @@ This will be a route with a sidebar much like reviews except the buttons will pu
 
 ## OnGoing notes
 
-react-gh-pages doesn't seem to be deploying this correctly. Starts fine as a react app.
-
-Changed BrowserRouter to HashRouter and nothing changed. Turns out my homepage in package.json was not at all correct. Website now loading
-
-Adding in my reviews section, right now just doing some testing to see how to go about implementing it.
-useEffect is going off more than once on refresh so need to figure that out. Tried using the iterator in the for loop to switch between txts but it didn't seem to work, that will be fixed first.
-
-I ended up splitting things into a few different functions, mimicking what I did in music quiz. Speaking of mimicking, realized I needed to add js files to tailwind.config, a strange library this is.
+Just feel like playing around with phaser, implemented the intro phaser code into react, worked pretty well.
