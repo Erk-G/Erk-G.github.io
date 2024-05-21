@@ -24,8 +24,8 @@ const Home=()=>{
                     <h1 className="text-2xl">Currently Playing:</h1>
                     <div className="flex">
                         <div className="w-1/2">
-                            <h2>Dragon's Dogma 2</h2>
-                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c7/Dragon%27s_Dogma_2_cover_art.jpg/220px-Dragon%27s_Dogma_2_cover_art.jpg" alt="Dragons Dogma Box Art from Wikipedia"/>
+                            <h2>In Stars and Time</h2>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/3/31/In_Stars_and_Time_cover.png" alt="In Stars and Time Box Art from Wikipedia"/>
                         </div>
                     </div>
                 </div>
