@@ -25,7 +25,7 @@ const Home=()=>{
                     <div className="flex">
                         <div className="w-1/2">
                             <h2>In Stars and Time</h2>
-                            <img src="https://upload.wikimedia.org/wikipedia/en/3/31/In_Stars_and_Time_cover.png" alt="In Stars and Time Box Art from Wikipedia"/>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/a/a6/UFO_50_cover.png" alt="UFO 50 Box Art from Wikipedia"/>
                         </div>
                     </div>
                 </div>
