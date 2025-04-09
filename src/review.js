@@ -9,7 +9,7 @@ const Review=()=>{
     const btnClass="bg-gray-700 hover:bg-gray-600 text-white font-bold h-min w-full py-2 rounded"
     useEffect(()=>{
         let allReviews=[];
-        for(let i=1;i<3;i++){
+        for(let i=1;i<4;i++){
             fetch(`/Reviews/test${i}.txt`).then(res=>res.text()).then(text=>{
                 allReviews.push([text.match(/.+?(?=-)/),text.match(/\n.+?$/gm)]);
                 setReviews(allReviews);
