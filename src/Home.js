@@ -24,8 +24,8 @@ const Home=()=>{
                     <h1 className="text-2xl">Currently Playing:</h1>
                     <div className="flex">
                         <div className="w-1/2">
-                            <h2>Castlevania: Advance Collection</h2>
-                            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1552550/header.jpg?t=1734547063" alt="Castlevania: Advance collection steam page iamge"/>
+                            <h2>Hades 2</h2>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Hades_2_cover_art.jpeg" alt="Hades 2 wikipedia page image"/>
                         </div>
                     </div>
                 </div>
